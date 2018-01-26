@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'sreejagpt\'s personal blog',
   },
   plugins: ['gatsby-plugin-react-helmet'],
+  plugins: ['gatsby-plugin-glamor'],
 };
