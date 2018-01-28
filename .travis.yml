@@ -10,8 +10,8 @@ script:
 deploy:
   # deploy to sreejagpt.github.io and push build output to master branch
   - provider: script
+    skip_cleanup: true
     script: 
-      - npm install
       - npm run deploy
     on:
       branch: dev
