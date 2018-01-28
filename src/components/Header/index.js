@@ -9,9 +9,9 @@ const Header = () => (
     className='header'
     role='navigation'>
 
-    <NavLink to='/' text='Hi.'/>
-    <NavLink to='/projects' text='Projects.'/>
-    <NavLink to='/page-3' text='Talks.'/>
+    <NavLink to='/' text='✌🏼 Hi.'/>
+    <NavLink to='/projects' text='🏅 Projects.'/>
+    <NavLink to='/page-3' text='🎤 Talks.'/>
   </div>
 )
 

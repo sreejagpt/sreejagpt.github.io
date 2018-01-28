@@ -7,6 +7,7 @@ const NavLink = ({ text, to }) => (
   <Link
     role='menuitem'
     className='navLink'
+    activeClassName='active'
     exact to={to}
   >
     { text }

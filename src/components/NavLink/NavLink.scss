@@ -1,14 +1,21 @@
+%double-border-emphasis {
+  border-bottom: 0.02em solid #E4F6ED;
+  border-top: 0.02em solid #E4F6ED;
+}
+
 .navLink {
     color: #E4F6ED;
     font-size: 2em;
-    padding-right: 1em;
+    margin-right: 1em;
     text-decoration: none;
+    padding-bottom: 0.4em;
+    padding-top: 0.4em;
 
     &:hover {
-      text-decoration: underline;
+      @extend %double-border-emphasis;
     }
+}
 
-    &:active {
-      text-decoration: underline;
-    }
-  }
+.active {
+  @extend %double-border-emphasis;
+}
