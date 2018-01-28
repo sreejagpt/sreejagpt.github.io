@@ -1,13 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { styles } from './Header.style'
-
-import NavLink from '../NavLink' 
+import NavLink from '../NavLink'
+import './Header.scss'
 
 const Header = () => (
   <div
-    css={styles.header}
+    className='header'
     role='navigation'>
 
     <NavLink to='/' text='Hi.'/>

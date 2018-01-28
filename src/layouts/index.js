@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
-import './index.css'
+import './TemplateWrapper.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className='root'>
     <Helmet
       title="sreejagpt's blog"
       meta={[

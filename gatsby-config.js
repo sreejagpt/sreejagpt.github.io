@@ -2,6 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'sreejagpt\'s personal blog',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
-  plugins: ['gatsby-plugin-glamor'],
+  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass' ],
+    
 };
