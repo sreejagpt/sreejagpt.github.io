@@ -11,8 +11,8 @@ const Header = () => (
     role='navigation'>
 
     <NavLink to='/' text='Hi.'/>
-    <NavLink to='/page-2' text='Projects'/>
-
+    <NavLink to='/projects' text='Projects.'/>
+    <NavLink to='/page-3' text='Talks.'/>
   </div>
 )
 

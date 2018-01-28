@@ -1,7 +1,7 @@
 export const styles = {
   header: {
     background: 'rebeccapurple',
-    padding: '10%',
+    padding: '5%',
     display: 'flex',
   },
 }
