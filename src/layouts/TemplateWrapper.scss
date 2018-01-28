@@ -4,13 +4,22 @@
 $lato: 'Lato', sans-serif;
 
 html, body {
-  padding: 0;
-  margin: 0;
+  padding: 1em;
   background-color: $very-light-blue-grey;
   font-family: $lato;
+  font-color: $eerie-black;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
   margin: auto;
-  padding: 1%;
+  color: $hot-pink;
 }
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+

@@ -6,16 +6,18 @@ import Header from '../components/Header'
 import './TemplateWrapper.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className='fullHeight'>
     <Helmet
       title="sreejagpt's blog"
       meta={[
         { name: 'description', content: 'sreejagpt\'s personal blog' },
       ]}
     />
-    <Header />
-    <div>
-      {children()}
+    <div className='columns'>
+      <Header />
+      <div>
+        {children()}
+      </div>
     </div>
   </div>
 )
