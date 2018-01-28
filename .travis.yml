@@ -11,6 +11,7 @@ deploy:
   # deploy to sreejagpt.github.io and push build output to master branch
   - provider: script
     skip_cleanup: true
+    github-token: $GITHUB_TOKEN
     script: 
       - npm run deploy
     on:
