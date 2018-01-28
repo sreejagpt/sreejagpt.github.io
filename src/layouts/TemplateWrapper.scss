@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import '../layouts/colours.scss';
 
 $lato: 'Lato', sans-serif;
 
 html, body {
   padding: 0;
   margin: 0;
-  background-color: #E4F6ED;
+  background-color: $very-light-blue-grey;
   font-family: $lato;
 }
 
 h1 {
-  background-color: #3DDC97;
+  background-color: $bright-green;
   margin: auto;
   padding: 1%;
-  border-bottom: #FF495C solid 0.2em;
+  border-bottom: $hot-pink solid 0.2em;
 }

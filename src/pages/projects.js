@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const ProjectsPage = () => (
   <div>
-    <h1>Things I worked on.</h1>
+    <h1>I like doing stuff.</h1>
   </div>
 )
 

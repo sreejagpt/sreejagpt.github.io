@@ -1,6 +1,7 @@
+@import '../../layouts/colours.scss';
+
 .header {
-    background: #46237A;
+    background: $dark-purple;
     padding: 2%;
     display: flex;
-    border-bottom: #256EFF;
 }

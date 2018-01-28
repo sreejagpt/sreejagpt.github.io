@@ -1,10 +1,12 @@
+@import '../../layouts/colours.scss';
+
 %double-border-emphasis {
-  border-bottom: 0.02em solid #E4F6ED;
-  border-top: 0.02em solid #E4F6ED;
+  border-bottom: 0.02em solid $very-light-blue-grey;
+  border-top: 0.02em solid $very-light-blue-grey;
 }
 
 .navLink {
-    color: #E4F6ED;
+    color: $very-light-blue-grey;
     font-size: 2em;
     margin-right: 1em;
     text-decoration: none;
