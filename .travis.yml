@@ -11,3 +11,5 @@ deploy:
   # deploy to sreejagpt.github.io and push build output to master branch
   - provider: script
     script: npm run deploy
+    on:
+      branch: dev
