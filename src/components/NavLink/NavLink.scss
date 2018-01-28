@@ -1,12 +1,13 @@
 @import '../../layouts/colours.scss';
 
 %double-border-emphasis {
-  border-bottom: 0.02em solid $very-light-blue-grey;
-  border-top: 0.02em solid $very-light-blue-grey;
+  border-bottom: 0.05em solid $hot-pink;
+  border-top: 0.05em solid $hot-pink;
+  color: $hot-pink;
 }
 
 .navLink {
-    color: $very-light-blue-grey;
+    color: $eerie-black;
     font-size: 2em;
     margin-right: 1em;
     text-decoration: none;
@@ -20,4 +21,5 @@
 
 .active {
   @extend %double-border-emphasis;
+  color: $hot-pink;
 }
