@@ -8,8 +8,8 @@ script:
   - npm install
   - npm run build
 deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: build
-  on:
-    branch: dev
+  # deploy to sreejagpt.github.io and push build output to master branch
+  - provider: script
+    script: npm run deploy
+    on:
+      branch: develop
