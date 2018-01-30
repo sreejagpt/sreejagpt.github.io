@@ -2,11 +2,22 @@
 @import '../layouts/colours.scss';
 
 $lato: 'Lato', sans-serif;
+$border-width: 0.3em;
 
 html, body {
   padding: 1em;
   font-family: $lato;
-  font-color: $eerie-black;
+  font-color: $jet;
+  margin: 0;
+  height: 95%;
+}
+
+#___gatsby {
+  height:100%;
+
+  .root {
+    height: 100%;
+  }
 }
 
 h1 {
@@ -17,6 +28,11 @@ h1 {
 .columns {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  height: 100%;
 }
 
+.content {
+  border-left: $light-gray solid $border-width;
+  padding-left: 2em;
+  max-width: 60%;
+}

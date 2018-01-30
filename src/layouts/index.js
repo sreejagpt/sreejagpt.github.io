@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import './TemplateWrapper.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <div className='fullHeight'>
+  <div className='root'>
     <Helmet
       title="sreejagpt's blog"
       meta={[
@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <div className='columns'>
       <Header />
-      <div>
+      <div className='content'>
         {children()}
       </div>
     </div>
