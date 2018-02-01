@@ -2,17 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import NavLink from '../NavLink'
-import './Header.scss'
+import './NavTabs.scss'
 
-const Header = () => (
-  <div
-    className='header'
-    role='navigation'>
-
+const NavTabs = () => (
+  <footer className='root'>
     <NavLink to='/' text='✌🏼 Hi.'/>
     <NavLink to='/projects' text='🏅 Projects.'/>
     <NavLink to='/page-3' text='🎤 Talks.'/>
-  </div>
+  </footer>
 )
 
-export default Header
+export default NavTabs

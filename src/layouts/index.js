@@ -2,22 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
+import NavTabs from '../components/NavTabs'
 import './TemplateWrapper.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <div className='root'>
+  <div className='wrapper'>
     <Helmet
       title="sreejagpt's blog"
       meta={[
         { name: 'description', content: 'sreejagpt\'s personal blog' },
       ]}
     />
-    <div className='columns'>
-      <Header />
-      <div className='content'>
-        {children()}
-      </div>
+    <NavTabs/>
+    <div className='content'>
+      {children()}
     </div>
   </div>
 )
