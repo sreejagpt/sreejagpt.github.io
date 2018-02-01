@@ -20,7 +20,8 @@ html, body {
     align-content: stretch;
 
     & .content {
-      padding: 2em;
+      padding-top: 4em;
+      padding-left: 2em;
       flex: 1 100%;
     }
   }
@@ -29,5 +30,11 @@ html, body {
 
 h1, h2 {
   color: $hot-pink;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-style: italic;
 }
 
