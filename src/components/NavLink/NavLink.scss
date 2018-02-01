@@ -2,7 +2,6 @@
 
 %border-emphasis {
   color: $hot-pink;
-  text-decoration: underline $hot-pink;
 }
 
 .navLink {
@@ -11,12 +10,20 @@
     text-decoration: none;
     margin-left: 1em;
     margin-top: 0.6em;
+    margin-bottom: -1.4em;
+    border-right: solid 0.1em $light-gray;
+    padding-right: 1em;
+
     &:hover {
       @extend %border-emphasis;
     }
 
     &.active {
       @extend %border-emphasis;
+    }
+
+    &:last-child {
+      border-right: none;
     }
 }
 
