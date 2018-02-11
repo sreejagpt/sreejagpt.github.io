@@ -7,9 +7,9 @@ import './TemplateWrapper.scss'
 const TemplateWrapper = ({ children }) => (
   <div className='wrapper'>
     <Helmet
-      title="sreejagpt's blog"
+      title="sreejagpt"
       meta={[
-        { name: 'description', content: 'sreejagpt\'s personal blog' },
+        { name: 'description', content: 'sreejagpt' },
       ]}
     />
     <div className='content'>

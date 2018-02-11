@@ -5,7 +5,7 @@ import me from './assets/me.png'
 const AboutMe = () => (
   <div className='row'>
     <span><img src={me}/></span>
-    <div id='#hi' className='column'>
+    <div className='column'>
       <h1>sreejagpt.</h1>
       <h2>Full stack developer.</h2>
       <div className='inline-icons'>
