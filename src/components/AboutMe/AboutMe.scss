@@ -1,0 +1,47 @@
+@import '../../layouts/colours.scss';
+
+@mixin inline-icon($url) {
+  background: url($url) no-repeat;
+  width: 33%;
+  height: 100%;
+  background-size: contain;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.row {
+  box-shadow: inset 0 -1px 1px 1px rgba($light-gray, 0.5);
+  z-index: 1;
+  background-color: white;
+  padding: 2em;
+  display: flex;
+  border-radius: 10px;
+
+  flex-direction: row;
+
+  img {
+    padding-right: 1em;
+  }
+}
+
+.inline-icons {
+  margin-top: 1em;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+}
+
+.linkedin {
+  @include inline-icon('./assets/linkedin.png');
+}
+
+.twitter {
+  @include inline-icon('./assets/twitter.png');
+}
+
+.github {
+  @include inline-icon('./assets/github.png');
+}

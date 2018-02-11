@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import NavTabs from '../components/NavTabs'
 import './TemplateWrapper.scss'
 
 const TemplateWrapper = ({ children }) => (
@@ -13,7 +12,6 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'sreejagpt\'s personal blog' },
       ]}
     />
-    <NavTabs/>
     <div className='content'>
       {children()}
     </div>

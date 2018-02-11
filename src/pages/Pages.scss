@@ -1,46 +1,17 @@
-@mixin inline-icon($url) {
-  background: url($url) no-repeat;
-  width: 33%;
-  height: 100%;
-  background-size: contain;
-  opacity: 0.3;
+@import '../layouts/colours.scss';
 
-  &:hover {
-    opacity: 1;
-  }
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  
-  img {
-    padding-right: 1em;
-  }
-}
-
-.bio {
+.verticalTimeline {
   display: flex;
   flex-direction: column;
-  height: 10em;
 
-  .inline-icons {
-    margin-top: 1em;
-    height: 25%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  a.linkedin {
-    @include inline-icon('./assets/linkedin.png');
-  }
-
-  .twitter {
-    @include inline-icon('./assets/twitter.png');
-  }
-
-  .github {
-    @include inline-icon('./assets/github.png');
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 0.1em;
+    background: $light-gray;
   }
 }
 
