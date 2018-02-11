@@ -6,19 +6,21 @@
   height: 100%;
   background-size: contain;
   opacity: 0.3;
+  transition: opacity 1s, transform .2s ease-in-out;
 
   &:hover {
     opacity: 1;
+    transform: scale(1.1);
   }
 }
 
 .row {
-  box-shadow: inset 0 -1px 1px 1px rgba($light-gray, 0.5);
   z-index: 1;
   background-color: white;
-  padding: 2em;
+  padding: 1em;
   display: flex;
-  border-radius: 10px;
+  border-radius: 1em;
+  border: $light-gray dotted 0.1em;
 
   flex-direction: row;
 

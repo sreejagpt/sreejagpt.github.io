@@ -12,13 +12,15 @@ const IndexPage = () => (
       <div className='projects'>
         <div className='inline-heading'>
           <img src={projects}/>
-          <div className='inline-text'>Projects</div>
+          <div className='inline-text'>Projects.</div>
+
+          
         </div>
       </div>
 
       <div className='talks'>
         <img src={talks}/>
-        <div className='inline-text'>Talks</div>
+        <div className='inline-text'>Talks.</div>
       </div>
     </div>
   </div>
