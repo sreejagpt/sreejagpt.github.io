@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import './TemplateWrapper.scss';
+import styles from './TemplateWrapper.module.scss';
 
 const TemplateWrapper = ({ children }) => (
-  <div className="wrapper">
+  <div className={styles.wrapper}>
     <Helmet
       title="sreejagpt"
       meta={[{ name: 'description', content: 'sreejagpt' }]}
     />
-    <div className="content">{children()}</div>
+    <div className={styles.content}>{children()}</div>
   </div>
 );
 

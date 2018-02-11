@@ -21,6 +21,8 @@
   display: flex;
   border-radius: 1em;
   border: $light-gray dotted 0.1em;
+  margin: 0 auto;
+  margin-top: 1em;
 
   flex-direction: row;
 
@@ -29,7 +31,7 @@
   }
 }
 
-.inline-icons {
+.inlineIcons {
   margin-top: 1em;
   height: 25%;
   display: flex;

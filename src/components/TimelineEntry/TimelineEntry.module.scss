@@ -1,4 +1,4 @@
-@mixin timeline-dot {
+.entry {
   position: relative;
   text-align: center;
   margin: 0 auto;
@@ -6,24 +6,13 @@
   opacity: 0.7;
   z-index: 1;
   transition: opacity 1s, transform .2s ease-in-out, margin .5s ease-in-out;
+
   &:hover {
     opacity: 1;
     cursor: pointer;
     transform: scale(1.1);
   }
-}
 
-.entry {
-  @include timeline-dot;
-
-  .inline-text {
-    position: absolute;
-    top: 1.8em;
-    left: 15%;
-    right: 17%;
-    font-size: 1.8em;
-    color: white;
-  }
 }
 
 .selected {
@@ -42,6 +31,17 @@
 .detailText {
   visibility: visible; 
   opacity: 1;
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.inlineText {
+  position: absolute;
+  top: 1.8em;
+  left: 17%;
+  right: 17%;
+  font-size: 1.8em;
+  color: white;
 }
  
 

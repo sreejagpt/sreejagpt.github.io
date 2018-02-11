@@ -13,13 +13,13 @@ html, body {
 #___gatsby {
   height: 98%;
 
-  .wrapper {
+  &.wrapper {
     display: flex;  
     flex-direction: column;
     height: inherit;
     align-content: stretch;
 
-    & .content {
+    &.content {
       margin: auto;
       flex: 1 100%;
       padding-top: 0.5em;

@@ -1,29 +1,29 @@
 import React from 'react';
-import './AboutMe.scss';
+import styles from './AboutMe.module.scss';
 import me from './assets/me.png';
 
 const AboutMe = () => (
-  <div className="row">
+  <div className={styles.row}>
     <span>
       <img src={me} />
     </span>
-    <div className="column">
+    <div className={styles.column}>
       <h1>sreejagpt.</h1>
       <h2>Full stack developer.</h2>
-      <div className="inline-icons">
+      <div className={styles.inlineIcons}>
         <a
           href="http://www.linkedin.com/in/sreeja-gupta"
-          className="linkedin"
+          className={styles.linkedin}
           target="_blank"
         />
         <a
           href="https://twitter.com/sreejagpt/"
-          className="twitter"
+          className={styles.twitter}
           target="_blank"
         />
         <a
           href="https://github.com/sreejagpt"
-          className="github"
+          className={styles.github}
           target="_blank"
         />
       </div>

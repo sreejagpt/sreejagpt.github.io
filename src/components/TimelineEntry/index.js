@@ -1,9 +1,10 @@
 import React from 'react';
-import classNames from 'classnames';
-import './TimelineEntry.scss';
+import classNames from 'classnames/bind';
+import styles from './TimelineEntry.module.scss';
+
+const bind = classNames.bind(styles);
 
 class TimelineEntry extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -17,21 +18,31 @@ class TimelineEntry extends React.Component {
 
   render = () => (
     <div
-      className={classNames({
+      className={bind({
         entry: true,
         selected: this.isSelected(),
       })}
-      onClick={ this.handleClick }
+      onClick={this.handleClick}
     >
-      <img src={ this.props.image } />
-      <div className="inline-text">{ this.props.entryText }</div>
+      <img src={this.props.image} />
+      <div className={styles.inlineText}>{this.props.entryText}</div>
       <div
-        className={classNames({
+        className={bind({
           hidden: true,
           detailText: this.isSelected(),
         })}
       >
+        {this.props.details &&
+          this.props.details.map((detail, index) => (
+            <div key={`${detail.heading}-${index}`}>
+              <span className={styles.row}>
+                <img src={detail.image} />
+                <h1>{detail.heading}</h1>
+              </span>
 
+              <h2>{detail.subtitle}</h2>
+            </div>
+          ))}
       </div>
     </div>
   );
