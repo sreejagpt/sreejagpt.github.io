@@ -1,3 +1,5 @@
+@import '../../layouts/colours.scss';
+
 .entry {
   position: relative;
   text-align: center;
@@ -9,10 +11,22 @@
 
   &:hover {
     opacity: 1;
-    cursor: pointer;
     transform: scale(1.1);
   }
 
+  img {
+    cursor: pointer;
+  }
+
+  .inlineText {
+    cursor: pointer;
+    position: absolute;
+    top: 1.8em;
+    left: 17%;
+    right: 17%;
+    font-size: 1.8em;
+    color: white;
+  }
 }
 
 .selected {
@@ -33,16 +47,34 @@
   opacity: 1;
   max-width: 30%;
   margin: 0 auto;
-}
+  position: relative;
+ 
+  &:nth-of-type(1) {
+    bottom: 3em;
+    left: 13em;
+  }
 
-.inlineText {
-  position: absolute;
-  top: 1.8em;
-  left: 17%;
-  right: 17%;
-  font-size: 1.8em;
-  color: white;
+  .heading {
+    img {
+      float: left;
+    }
+
+    h1 {
+      position: relative;
+      bottom: 2em;
+      left: 2.2em;
+    }
+  }
+
+
 }
  
-
-
+.subtitle {
+  border-top: 0.03em solid $hot-pink;
+  font-style: italic;
+  font-size: 0.8em;
+  color: darkgray;
+  position: relative;
+  bottom: 5em;
+  left: 6em;
+}

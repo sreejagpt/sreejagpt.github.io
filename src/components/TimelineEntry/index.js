@@ -22,28 +22,22 @@ class TimelineEntry extends React.Component {
         entry: true,
         selected: this.isSelected(),
       })}
-      onClick={this.handleClick}
     >
-      <img src={this.props.image} />
-      <div className={styles.inlineText}>{this.props.entryText}</div>
-      <div
-        className={bind({
-          hidden: true,
-          detailText: this.isSelected(),
-        })}
-      >
+      <img src={this.props.image} onClick={this.handleClick}/>
+      <span className={styles.inlineText} onClick={this.handleClick}>{this.props.entryText}</span>
+      
         {this.props.details &&
           this.props.details.map((detail, index) => (
-            <div key={`${detail.heading}-${index}`}>
-              <span className={styles.row}>
+            <div key={`${detail.heading}-${index}`}
+              className={bind({ hidden: true, detailText: this.isSelected() })}>
+              <div className={styles.heading}>
                 <img src={detail.image} />
                 <h1>{detail.heading}</h1>
-              </span>
+              </div>
 
-              <h2>{detail.subtitle}</h2>
+              <div className={styles.subtitle}>{detail.subtitle}</div>
             </div>
           ))}
-      </div>
     </div>
   );
 }
