@@ -50,19 +50,29 @@
   position: relative;
  
   &:nth-of-type(1) {
-    bottom: 3em;
-    left: 13em;
+    top: 2em;
+    right: 2em;
+
+    @media(min-width: 30em) {
+      bottom: 3em;
+      left: 13em;
+    }
   }
 
   .heading {
     img {
       float: left;
+      margin-right: 0.5em;
     }
 
     h1 {
       position: relative;
       bottom: 2em;
-      left: 2.2em;
+      left: 2.6em;
+
+      @media(min-width: 30em) {
+        left: 2.2em;
+      }
     }
   }
 
