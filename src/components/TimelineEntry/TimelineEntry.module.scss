@@ -5,6 +5,7 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 5em;
+  margin-bottom: 10em;
   opacity: 0.7;
   z-index: 1;
   transition: opacity 1s, transform .2s ease-in-out, margin .5s ease-in-out;
@@ -41,7 +42,7 @@
 }
 
 .details {
-  margin-left: 30em;
+  margin-left: 35em;
   margin-top: -17em;
 }
 
@@ -53,4 +54,13 @@
   font-size: 0.8em;
   color: $hot-pink;
   font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  img {
+    margin-right: 1em;
+  }
 }

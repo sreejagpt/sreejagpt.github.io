@@ -29,13 +29,14 @@ class TimelineEntry extends React.Component {
           this.props.details.map((detail, index) => (
             <div key={`${detail.heading}-${index}`}
               className={bind({ hidden: true, detailText: this.isSelected() })}>
-              <div className={styles.heading}>
+              <div className={styles.row}>
                 <a href={detail.url} target='_blank'><img src={detail.image} /></a>
-                <h1>{detail.heading}</h1>
+                <div>
+                  <h1>{detail.heading}</h1>
+                  <div className={styles.subtitle}>{detail.subtitle}</div>
+                  <div className={styles.awards}>🏅{detail.awards}</div>
+                </div>
               </div>
-
-              <div className={styles.subtitle}>{detail.subtitle}</div>
-              <div className={styles.awards}>🏅{detail.awards}</div>
             </div>
           ))}
         </div>
