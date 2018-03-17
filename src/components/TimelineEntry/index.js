@@ -24,20 +24,21 @@ class TimelineEntry extends React.Component {
       })}
     >
       <img src={this.props.image} onClick={this.handleClick}/>
-      <span className={styles.inlineText} onClick={this.handleClick}>{this.props.entryText}</span>
-      
+      <div className={bind({ hidden: !this.isSelected(), details: true })}>
         {this.props.details &&
           this.props.details.map((detail, index) => (
             <div key={`${detail.heading}-${index}`}
               className={bind({ hidden: true, detailText: this.isSelected() })}>
               <div className={styles.heading}>
-                <img src={detail.image} />
+                <a href={detail.url} target='_blank'><img src={detail.image} /></a>
                 <h1>{detail.heading}</h1>
               </div>
 
               <div className={styles.subtitle}>{detail.subtitle}</div>
+              <div className={styles.awards}>🏅{detail.awards}</div>
             </div>
           ))}
+        </div>
     </div>
   );
 }
