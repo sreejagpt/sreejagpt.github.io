@@ -15,14 +15,8 @@ const AboutMe = () => (
           href="http://www.linkedin.com/in/sreeja-gupta"
           className={styles.linkedin}
         />
-        <a
-          href="https://twitter.com/sreejagpt/"
-          className={styles.twitter}
-        />
-        <a
-          href="https://github.com/sreejagpt"
-          className={styles.github}
-        />
+        <a href="https://twitter.com/sreejagpt/" className={styles.twitter} />
+        <a href="https://github.com/sreejagpt" className={styles.github} />
       </div>
     </div>
   </div>
