@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import styles from './TemplateWrapper.module.scss';
+import styles from '../../App.scss';
 
 const TemplateWrapper = ({ children }) => (
   <div className={styles.wrapper}>

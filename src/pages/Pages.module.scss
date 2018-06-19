@@ -1,4 +1,4 @@
-@import '../layouts/colours.scss';
+@import '../styles/colours.scss';
 
 .verticalTimeline {
   display: flex;
@@ -9,7 +9,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    height: 200%;
+    height: 100%;
     width: 0.1em;
     border-left: 0.1em dotted $light-gray;
   }

@@ -2,21 +2,15 @@ import React from 'react';
 import styles from './Pages.module.scss';
 import AboutMe from '../components/AboutMe';
 import TimelineEntry from '../components/TimelineEntry';
-import projects from './projects.png';
-import talks from './talks.png';
-import metamorph from './metamorph.png';
-import happybutton from './happybutton.png';
+import projects from './assets/projects.png';
+import talks from './assets/talks.png';
+import metamorph from './assets/metamorph.png';
+import happybutton from './assets/happybutton.png';
 
 const IndexPage = () => (
   <div>
     <div className={styles.verticalTimeline}>
       <AboutMe />
-      <TimelineEntry
-        entryText="Projects"
-        image={projects}
-        details={projectDetails}
-      />
-      <TimelineEntry entryText="Talks" image={talks} />
     </div>
   </div>
 );
