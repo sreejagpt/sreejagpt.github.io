@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Pages.module.scss';
 import AboutMe from '../components/AboutMe';
-import TimelineEntry from '../components/TimelineEntry';
 import projects from './assets/projects.png';
 import talks from './assets/talks.png';
 import metamorph from './assets/metamorph.png';
