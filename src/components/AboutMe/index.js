@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './AboutMe.module.scss';
+import styles from './Header.module.scss';
 import me from './assets/me.png';
 
 const AboutMe = () => (

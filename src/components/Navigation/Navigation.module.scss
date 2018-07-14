@@ -1,18 +1,17 @@
 @import '../../styles/colours.scss';
 
 .root {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
+  text-align: center;
   position: fixed;
-  background-color: $nav-gray;
   z-index: 1;
-  height: 100%;
+  width: 100%;
 
   a {
     font-size: 0.9em;
     color: $dark-gray;
     padding: 0.5em;
+    margin-right: 1em;
+    border-radius: 6em;
     text-decoration: none;
 
     &:hover {
