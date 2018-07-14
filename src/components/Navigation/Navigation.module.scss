@@ -11,9 +11,12 @@
 
   a {
     font-size: 0.9em;
+    color: $dark-gray;
     padding: 0.5em;
+    text-decoration: none;
 
     &:hover {
+      color: $nav-gray;
       background-color: $hot-pink;
     }
   }

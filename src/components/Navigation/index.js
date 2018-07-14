@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Navigation.module.scss';
 
 const Navigation = ({ navItems }) => {
-   const navElements = navItems.map((navItem) => <a href={navItem.url}>{navItem.text}</a>);
+   const navElements = navItems.map((navItem, index) => <a key={index} href={navItem.url}>{navItem.text}</a>);
 
    return (
 
