@@ -19,5 +19,12 @@
       color: $nav-gray;
       background-color: $hot-pink;
     }
+
+    &.active {
+      background-color: $hot-pink;
+      color: $nav-gray;
+    }
   }
 }
+
+
