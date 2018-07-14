@@ -1,0 +1,20 @@
+@import '../../styles/colours.scss';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: fixed;
+  background-color: $nav-gray;
+  z-index: 1;
+  height: 100%;
+
+  a {
+    font-size: 0.9em;
+    padding: 0.5em;
+
+    &:hover {
+      background-color: $hot-pink;
+    }
+  }
+}
